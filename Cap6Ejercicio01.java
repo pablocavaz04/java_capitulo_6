@@ -27,6 +27,7 @@ public class Cap6Ejercicio01 {
             System.out.println("La suma total es de : "+suma);
         }else {
             System.out.println(" FIN DEL JUEGO");
-        }  
+        } 
+        sc.close(); 
     }
 }
