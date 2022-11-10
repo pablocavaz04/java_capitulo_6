@@ -4,10 +4,8 @@
 de 40 cartas: 2, 3, 4, 5, 6, 7, sota, caballo, rey y as.
 
  */
-import java.util.Scanner;
 public class Cap6Ejercicio03 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
         String derivado = " ";
         int numero1 = (int)(Math.random()*10)+1;
         switch (numero1) {
@@ -43,7 +41,6 @@ public class Cap6Ejercicio03 {
                 palo = "🏏";
                 break;
         }
-        System.out.println("Tu carta es un "+derivado+" de "+palo);
-
+        System.out.println("Tu carta es un "+derivado+" de "+palo); 
     }
 }

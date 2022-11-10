@@ -44,6 +44,6 @@ public class Cap6Ejercicio02 {
                 break;
         }
         System.out.println("Tu carta es un "+derivado+" de "+palo);
-
+        sc.close(); 
     }
 }
