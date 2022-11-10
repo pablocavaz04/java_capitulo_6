@@ -9,6 +9,41 @@ import java.util.Scanner;
 public class Cap6Ejercicio02 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        String derivado = " ";
+        int numero1 = (int)(Math.random()*13)+1;
+        switch (numero1) {
+            case 1:
+                derivado= "AS";
+                break;
+            case 11:
+                derivado= "J";
+                break; 
+            case 12:
+                derivado="Q";
+            case 13:
+                derivado="K";
+            default:
+            derivado = String.valueOf(numero1);
+                break;  
+        }
+
+        int numero2 = (int)(Math.random()*4)+1;
+        String palo = " ";
+        switch (numero2) {
+            case 1:
+                palo = "♠";
+                break;
+            case 2:
+                palo = "♣";
+                break;
+            case 3:
+                palo = "♥";
+                break;
+            case 4:
+                palo = "♦";
+                break;
+        }
+        System.out.println("Tu carta es un "+derivado+" de "+palo);
 
     }
 }
