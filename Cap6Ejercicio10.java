@@ -1,5 +1,3 @@
-import javax.annotation.processing.SupportedOptions;
-
 /*
  * Author:Pablo Camino Vázquez
 10) Realiza un programa que pinte por pantalla diez líneas formadas por caracteres.
