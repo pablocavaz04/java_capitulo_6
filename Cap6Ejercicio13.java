@@ -4,7 +4,7 @@
 continuar tirando los dados una y otra vez hasta que en alguna tirada los dos
 dados tengan el mismo valor
  */
-public class Cap6Ejercicio6 {
+public class Cap6Ejercicio13 {
     public static void main(String[] args) {
         int dado1=0;
         int dado2=0;
