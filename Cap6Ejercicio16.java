@@ -1,5 +1,5 @@
 /*
- * Author:Pablo Camnio Vázquez
+ * Author:Pablo Camino Vázquez
 16) Realiza un simulador de máquina tragaperras simplificada que cumpla los
 siguientes requisitos:
 a) El ordenador mostrará una tirada que consiste en mostrar 3 figuras. Hay 5
@@ -22,7 +22,29 @@ Enhorabuena, ha ganado 10 monedas
  */
 public class Cap6Ejercicio16 {
     public static void main(String[] args) {
-        
+        int numero=0;
+        String figura="";
+        for(int i=1 ; i<=3;i++){
+            numero=(int)(Math.random()*5)+1;
+            switch (numero) {
+                case 1:
+                figura="❤️ ";
+                break;
+                case 2:
+                figura="🔷 ";
+                break;
+                case 3:
+                figura="🧲 ";
+                break;
+                case 4:
+                figura="🔔 ";
+                break;
+                case 5:
+                figura="🍋 ";
+                break;
+            }
+            System.out.print(figura);
+        }
 
     }
 }
