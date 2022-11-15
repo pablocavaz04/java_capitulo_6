@@ -31,6 +31,7 @@ public class Cap6Ejercicio14 {
 
         }while(i<6);
         System.out.println("No he podido adivnarlo");
+        sc.close();
         
     }
 }
