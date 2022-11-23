@@ -22,29 +22,49 @@ Enhorabuena, ha ganado 10 monedas
  */
 public class Cap6Ejercicio16 {
     public static void main(String[] args) {
-        int numero=0;
-        String figura="";
-        for(int i=1 ; i<=3;i++){
-            numero=(int)(Math.random()*5)+1;
-            switch (numero) {
+        int valor;
+        int valor1 = 0;
+        int valor2 = 0;
+        int valor3 = 0;
+        for(int contador = 1; contador <= 3 ; contador ++){
+            valor = (int)(Math.random()*5+1);
+            switch (valor) {
                 case 1:
-                figura="❤️ ";
+                    System.out.print(" ❤️ | ");
                 break;
                 case 2:
-                figura="🔷 ";
+                    System.out.print(" 🔷 | ");
                 break;
                 case 3:
-                figura="🧲 ";
+                    System.out.print(" 🧲 | ");
                 break;
                 case 4:
-                figura="🔔 ";
+                    System.out.print(" 🔔 | ");
                 break;
                 case 5:
-                figura="🍋 ";
+                    System.out.print(" 🍋 | ");
                 break;
             }
-            System.out.print(figura);
-        }
 
+            switch (contador) {
+                case 1:
+                    valor1 = valor;
+                break;
+                case 2:
+                    valor2 = valor;
+                break;
+                case 3:
+                    valor3 = valor;
+                break;
+            }
+        }
+        System.out.println("");
+        if(valor1 != valor2 && valor1 != valor3 && valor2 != valor3){
+            System.out.println(" -> Has perdido");
+        } else if(valor1 == valor2 && valor1 == valor3 && valor2 == valor3){
+            System.out.println(" -> Has ganado 10 monedas");
+        } else if(valor1 == valor2 || valor1 == valor3 || valor2 == valor3){
+            System.out.println(" -> Has recuperado la moneda");
+        }
     }
 }
